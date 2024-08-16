@@ -1,0 +1,267 @@
+.fondo{
+    /*Camnio de color al fondo*/
+    background-color: #E5E0D6;
+}
+
+.encabezado{
+    /*Centrar el texto*/
+    text-align: center;
+}
+
+#menu{
+    /*Color a la barra del menú, su borde y su redondeo*/
+    background-color: #071739;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#menu ul{
+    /*Colocamos estas etiquetas para qie tuviera una mejor vista*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#menu li{
+    margin: 10px 20px; /* Ajusta el margen para que se vea bien en pantallas más pequeñas */
+    list-style: none;
+    font-size: 24px; /* Reducción del tamaño de fuente para pantallas pequeñas */
+}
+
+#menu a{
+    text-decoration: none;
+    color: #E5E0D6;
+}
+
+#menu a:hover{
+    /*Quitamos lo que es la línea azul que viene por defecto*/
+    background-color: #A68868;
+    padding: 10%;
+    border-radius: 5% ;
+}
+
+.pensadores{
+    /*Le dimos un mejor color que convinde de tal manera que se vea todo acorde*/
+    background-color: #B2998A;
+    border-radius: 3%;
+    text-align: center;
+    color: #E0E5E9;
+}
+
+.division{
+    display:grid;
+    grid-template-columns: 15% 25% 60%;
+    padding: 5%;
+}
+
+.division div{
+    padding: 5%;
+}
+
+.division img{
+    text-align:center;
+    max-width: 100%;
+    min-width: 100%;
+    margin-top: 80%;
+}
+
+.separar{  
+    font-size: 35px;
+    text-align: justify;
+}
+
+/*Esto es de los Menus*/
+#menu4{
+    background-color: #071739;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#menu4 ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu4 li{
+    margin-right: 30px;
+    list-style: none;
+    font-size: 35px;
+}
+
+#menu4 a{
+    text-decoration: none;
+    color: #E5E0D6;
+}
+
+#menu4 a:hover{
+    background-color: #A68868;
+    padding: 10%;
+    border-radius: 5% ;
+}
+
+/*Esto es los ángulos*/
+.tituloCentro{
+    text-align: center;
+    font-size: 50px;
+}
+
+.primeraParte{
+    display: grid;
+    grid-template-columns: 40% 60% ;
+}
+
+.primeraParte div{
+    padding: 5%;
+}
+
+.primeraParte iframe{
+    max-width: 95%;
+}
+
+.primeraParte p{
+    font-size: 19px;
+}
+
+/*Esto es de la Factorización*/
+.dividirFac{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.dividirFac div{
+    padding: 5%;
+}
+
+.dividirFac iframe{
+    max-width: 95%;
+}
+
+.dividirFac p{
+    font-size: 19px;
+    margin-top: 15%;
+}
+
+/*Esto es de los ejercicios de la Factorización*/
+.ejercicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ejercicios div{
+    padding: 5%;
+}
+
+.consejosFac{
+    background-color: #B2998A;
+    margin-top: 15px;
+    border-radius: 15px;
+    color: #E0E5E9;
+}
+
+.agrandar{
+    font-size: 30px;
+}
+
+.ver{
+    width: 200px;
+    height: 60px;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #071739;
+    color: #E0E5E9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Esto es de las fracciones*/
+.separa{
+    display: grid;
+    grid-template-columns: 60% 40% ;
+}
+
+.separa div{
+    padding: 5%;
+}
+
+.separa iframe{
+    max-width: 95%;
+}
+
+/*Esto es de la velocidad*/
+.divisiones{
+    display: grid;
+    grid-template-columns: 40% 60% ;
+}
+
+.divisiones div{
+    padding: 5%;
+}
+
+.divisiones iframe{
+    max-width: 95%;
+}
+
+.divisiones p{
+    font-size: 19px;
+    margin-top: 15%;
+}
+
+.final img{
+    width: 70px;
+    height: 60px;
+}
+
+/* Optimización de imágenes para responsividad */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustes de responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .division, .primeraParte, .dividirFac, .ejercicios, .separa, .divisiones {
+        grid-template-columns: 1fr;
+    }
+
+    #menu li, #menu4 li {
+        margin: 3px 5px; /* Ajuste de margen */
+        font-size: 16px; /* Reducción de tamaño de fuente */
+    }
+
+    .tituloCentro {
+        font-size: 15px;
+    }
+
+    .separar, .primeraParte p, .dividirFac p, .divisiones p {
+        font-size: 16px;
+    }
+
+    .agrandar {
+        font-size: 20px;
+    }
+
+    /* Ajuste de padding y tamaño de botones */
+    .ver {
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .division div, .primeraParte div, .dividirFac div, .ejercicios div, .separa div, .divisiones div {
+        padding: 2%;
+    }
+}
+
+/* Evitar hover en dispositivos táctiles */
+@media (hover: none) {
+    #menu a:hover, #menu4 a:hover {
+        background-color: inherit;
+        padding: inherit;
+        border-radius: inherit;
+    }
+}
