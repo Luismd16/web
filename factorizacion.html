@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Parte principal de la pagina, en la que va el encabezado-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linqueo de la parte del html a los estilos-->
+    <link rel="stylesheet" href="resources/style.css">
+    <!--Título de nuestra página-->
+    <title>Factorización</title>
+</head>
+<body class="fondo">
+    <header>
+        <section>
+            <!--Menú-->
+            <nav id="menu4">
+                <ul>
+                    <li><a href="factorizacion.html">Factorización</a></li>
+                    <li><a href="fracciones.html">Fracciones</a></li>
+                    <li><a href="index.html" style="all:unset"><img src="https://i.ibb.co/23PPHwC/logo-3.png"
+                                alt="error imagen"></a></li>
+                    <li><a href="velocidad.html">Velocidad</a></li>
+                    <li><a href="angulos.html">Ángulos</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <!--Parte principal de la página-->
+    <main>
+        <!--Título-->
+        <h1 class="tituloCentro">Factorización Por Agrupación de Terminos</h1>
+        <div class="dividirFac">
+            <p>La factorización por agrupación de términos es un método de factorización algebraica que se utiliza
+                principalmente para polinomios con cuatro o más términos. La idea principal es reorganizar y agrupar los
+                términos del polinomio en pares o grupos de manera que se puedan extraer factores comunes dentro de cada
+                grupo. Este método es especialmente útil cuando no es evidente un factor común para todos los términos
+                del polinomio, pero sí hay factores comunes en subgrupos de términos.
+                <br><br>
+                La clave de la factorización por agrupación de términos es identificar estos subgrupos de términos que
+                comparten un factor común, luego factorizar cada grupo por separado, y finalmente observar si el
+                polinomio resultante puede factorizarse aún más. Este proceso facilita la simplificación y solución de
+                expresiones algebraicas complejas, y es una técnica esencial en álgebra para trabajar con ecuaciones
+                polinomiales.
+            </p>
+            <!--Vídeo de referencia-->
+            <iframe width="935" height="526" src="https://www.youtube.com/embed/y_mkvBoYz-Y"
+                title="Factor común por agrupación de términos Ejemplo 1 | Factorización" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <script src="script.js"></script>
+        </div>
+        <!--Espacio para ejercucuis de práctica-->
+        <article class="ejercicios">
+            <div>
+                <center>
+                    <h3>Acá uno ejercicio para que puedas ir practicando</h3>
+                </center>
+
+                <center>
+                    <p class="agrandar">ax-2bx-2ay+4by</p>
+                </center>
+                <!--Botón para mostrar las respuestas-->
+                <center><button class="ver" onclick="mostrarTexto()">Ver respuesta</button> </center>
+                <p id="texto" style="display: none;">La Respuesta es: <br>
+                    (a-2)(x-2y)</p>
+            </div>
+
+
+            <div>
+                <center>
+                    <h3>Pasos para Resolver ecuaciones con Agrupación de Terminos</h3>
+                </center>
+                1. Agrupar los términos: Divide el polinomio en dos o más grupos que tengan un factor común.
+                Normalmente, se agrupan en pares. <br> <br>
+                2. Factorizar cada grupo: Extrae el factor común de cada grupo por separado.<br> <br>
+                3. Encontrar el factor común de los grupos: Después de factorizar cada grupo, observa si hay un factor
+                común entre los resultados de la factorización de los grupos.<br> <br>
+                4. Factorizar el factor común: Si hay un factor común entre los grupos, factorízalo fuera de la
+                expresión.<br> <br>
+            </div>
+            <!--Espácio para mostrar los consejos-->
+            <div class="consejosFac">
+                <center>
+                    <h3>Acá algunos consejos para factorizar</h3>
+                </center>
+                <p> - Reorganiza si es necesario: A veces, los términos no están en el orden más conveniente para
+                    agrupar.
+                    No dudes en reorganizarlos para encontrar grupos con factores comunes más fácilmente. <br> <br>
+                    - Busca patrones: Algunos polinomios tienen patrones comunes, como términos con los mismos
+                    coeficientes o variables. Identificar estos patrones puede facilitar la agrupación.<br><br>
+                    - Simplifica los términos: Antes de agrupar, simplifica los términos si es posible. Esto puede hacer
+                    más evidente cualquier factor común.<br> <br>
+                    - Prueba diferentes agrupaciones: Si una agrupación no funciona, intenta agrupar los términos de
+                    otra
+                    manera. La primera agrupación que intentas no siempre es la correcta.<br> <br>
+                    - Verifica factores comunes: Asegúrate de que cada grupo tenga un factor común claro. Si no lo
+                    tienen,
+                    es posible que necesites reordenar o reagrupar los términos.<br> <br></p>
+            </div>
+        </article>
+    </main>
+
+    <!--Parte final de la pagina-->
+    <footer class="final">
+        <hr>
+        <center>
+            <p>Puedes visitar pagina de Profe Alex de youtube para aprender más</p>
+        </center>
+        <center> <a href="https://www.youtube.com/@MatematicasprofeAlex"><img src="https://i.ibb.co/ssgwRYt/youtube.png" alt="youtube"
+                    border="0"> </a> </center>
+
+    </footer>
+   
+</body>
+
+</html>
